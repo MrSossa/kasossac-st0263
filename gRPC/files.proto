@@ -1,0 +1,10 @@
+syntax = "proto3";
+option go_package = "github.com/ksossa/Topicos-Telematica/gRPC/files"
+
+message ReadAllResponse {
+    string files = 1;
+}
+
+service Files {
+    rpc ReadAll() returns (ReadAllResponse);
+}
