@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20e1cc20-bf35-42a4-b5a8-7d353fc6f7fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/reto2/files/file1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reto2/files/file2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto2/src/api/domain/files/repository/pc/pcrepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/reto2/src/api/domain/files/repository/pc/pcrepository.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reto2/src/api/infrastructure/dependencies/dependencies.go" beforeDir="false" afterPath="$PROJECT_DIR$/reto2/src/api/infrastructure/dependencies/dependencies.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto2/src/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/reto2/src/api/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693427833158</updated>
-      <workItem from="1693427834603" duration="3548000" />
+      <workItem from="1693427834603" duration="3669000" />
     </task>
     <servers />
   </component>
