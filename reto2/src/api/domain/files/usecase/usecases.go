@@ -25,5 +25,9 @@ func (usecase fileUseCases) ReadAllMicro() ([]string, error) {
 }
 
 func (usecase fileUseCases) ReadAll() ([]string, error) {
-	return usecase.repository.ReadAllGRPC()
+	ans, err := usecase.repository.ReadAllGRPC()
+	if err == nil {
+		return ans, err
+	}
+	return usecase.repository.ReadAllRabbit()
 }

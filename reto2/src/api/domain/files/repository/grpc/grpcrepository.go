@@ -2,9 +2,10 @@ package grpc
 
 import (
 	"context"
+	"strings"
+
 	"github.com/ksossa/Topicos-Telematica/reto2/src/api/domain/proto/files"
 	"github.com/ksossa/Topicos-Telematica/reto2/src/api/infrastructure/dependencies"
-	"strings"
 )
 
 type GRPCRepository interface {

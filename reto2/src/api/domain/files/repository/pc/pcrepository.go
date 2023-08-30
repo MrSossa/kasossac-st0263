@@ -14,5 +14,5 @@ func NewPCRepository(container *dependencies.Container) PCRepository {
 }
 
 func (repository pcRepository) ReadAllMicro() ([]string, error) {
-	return []string{"hola", "pepe"}, nil
+	return []string{"file1.txt, file2.txt, file3.txt"}, nil
 }
