@@ -1,6 +1,9 @@
 package pc
 
-import "github.com/ksossa/Topicos-Telematica/reto2/src/api/infrastructure/dependencies"
+import (
+	"github.com/ksossa/Topicos-Telematica/reto2/src/api/infrastructure/dependencies"
+	"io/ioutil"
+)
 
 type PCRepository interface {
 	ReadAllMicro() ([]string, error)
@@ -14,5 +17,13 @@ func NewPCRepository(container *dependencies.Container) PCRepository {
 }
 
 func (repository pcRepository) ReadAllMicro() ([]string, error) {
-	return []string{"file1.txt, file2.txt, file3.txt"}, nil
+	files, err := ioutil.ReadDir("reto2/files")
+	if err != nil {
+		return nil, err
+	}
+	fileList := make([]string, 0)
+	for _, file := range files {
+		fileList = append(fileList, file.Name())
+	}
+	return fileList, nil
 }

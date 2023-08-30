@@ -29,7 +29,7 @@ func main() {
 		}
 		serverFiles := grpc.NewServer()
 
-		service := filesGRPCHandler.NewFilesGRPCHandler(nil)
+		service := filesGRPCHandler.NewFilesGRPCHandler(&dependencies.Container{})
 
 		proto.RegisterFilesServer(serverFiles, service)
 

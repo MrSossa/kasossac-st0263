@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20e1cc20-bf35-42a4-b5a8-7d353fc6f7fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reto2/src/api/domain/files/delivery/rabbit/rabbit.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reto2/src/api/domain/files/repository/rabbitmq/rabbitmqrepository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reto2/files/file1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reto2/files/file2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto2/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/reto2/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto2/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/reto2/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto2/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/reto2/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto2/src/api/domain/files/repository/grpc/grpcrepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/reto2/src/api/domain/files/repository/grpc/grpcrepository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reto2/src/api/domain/files/repository/pc/pcrepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/reto2/src/api/domain/files/repository/pc/pcrepository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto2/src/api/domain/files/repository/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/reto2/src/api/domain/files/repository/repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reto2/src/api/domain/files/usecase/usecases.go" beforeDir="false" afterPath="$PROJECT_DIR$/reto2/src/api/domain/files/usecase/usecases.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reto2/src/api/infrastructure/dependencies/dependencies.go" beforeDir="false" afterPath="$PROJECT_DIR$/reto2/src/api/infrastructure/dependencies/dependencies.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reto2/src/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/reto2/src/api/main.go" afterDir="false" />
     </list>
@@ -25,7 +18,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file:///usr/local/opt/go/libexec" />
+  <component name="GOROOT" url="file://$USER_HOME$/go/go1.19.2" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -45,15 +38,42 @@
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
+    "configurable..is.expanded": "false",
+    "configurable.GoLibrariesConfigurable.is.expanded": "true",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "go.sdk"
   }
 }]]></component>
+  <component name="RunManager" selected="Go Build.run gRPC">
+    <configuration name="run api gw" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="Topicos-Telematica" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="api-gw" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/reto2/src/api/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run gRPC" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="Topicos-Telematica" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="gRPC-server" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/reto2/src/api/main.go" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.run gRPC" />
+      <item itemvalue="Go Build.run api gw" />
+    </list>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693427833158</updated>
-      <workItem from="1693427834603" duration="426000" />
+      <workItem from="1693427834603" duration="3548000" />
     </task>
     <servers />
   </component>
@@ -82,5 +102,25 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/reto2/src/api/domain/files/delivery/http/files.go</url>
+          <line>10</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/reto2/src/api/domain/files/repository/pc/pcrepository.go</url>
+          <line>19</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
