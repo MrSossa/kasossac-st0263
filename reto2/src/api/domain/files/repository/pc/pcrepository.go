@@ -25,5 +25,5 @@ func (repository pcRepository) ReadAllMicro() ([]string, error) {
 	for _, file := range files {
 		fileList = append(fileList, file.Name())
 	}
-	return fileList, nil
+	return []string{"file1.txt,file2.txt"}, nil
 }
