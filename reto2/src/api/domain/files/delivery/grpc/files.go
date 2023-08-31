@@ -24,9 +24,11 @@ func NewFilesGRPCHandler(container *dependencies.Container) *FilesGRPCHandler {
 
 func (handler FilesGRPCHandler) ReadAll(context.Context, *files.ReadAllRequest) (*files.ReadAllResponse, error) {
 	log.Println(time.Now().String())
-	ans, err := handler.usecase.ReadAllMicro()
+	ansArray, err := handler.usecase.ReadAllMicro()
 	if err != nil {
 		return &files.ReadAllResponse{}, nil
 	}
-	return &files.ReadAllResponse{Files: strings.Join(ans, ", ")}, nil
+	ans := strings.Join(ansArray, ", ")
+	log.Println(ans)
+	return &files.ReadAllResponse{Files: ans}, nil
 }
