@@ -3,7 +3,6 @@ package usecase
 import (
 	"github.com/ksossa/Topicos-Telematica/reto2/src/api/domain/files/repository"
 	"github.com/ksossa/Topicos-Telematica/reto2/src/api/infrastructure/dependencies"
-	"log"
 )
 
 type FileUseCases interface {
@@ -23,7 +22,6 @@ func NewFileUseCases(container *dependencies.Container) FileUseCases {
 
 func (usecase fileUseCases) ReadAllMicro() ([]string, error) {
 	ans, err := usecase.repository.ReadAllMicro()
-	log.Println(ans)
 	return ans, err
 }
 

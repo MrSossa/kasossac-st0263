@@ -25,11 +25,11 @@ func NewFilesGRPCHandler(container *dependencies.Container) *FilesGRPCHandler {
 func (handler FilesGRPCHandler) ReadAll(context.Context, *files.ReadAllRequest) (*files.ReadAllResponse, error) {
 	log.Println("test1")
 	log.Println(time.Now().String())
-	_, err := handler.usecase.ReadAllMicro()
-	if err != nil {
-		return &files.ReadAllResponse{}, nil
-	}
-	log.Println("test1")
+	//_, err := handler.usecase.ReadAllMicro()
+	//if err != nil {
+	//	return &files.ReadAllResponse{}, nil
+	//}
+	log.Println("test2")
 	mock := []string{"file1.txt, file2.txt"}
 	ans := strings.Join(mock, ", ")
 	log.Println(ans)
