@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net"
 	"os"
 	"strings"
@@ -27,6 +28,7 @@ func main() {
 		if err != nil {
 			panic(fmt.Errorf("cannot create listener: %s", err))
 		}
+		log.Println("listening 50051")
 		serverFiles := grpc.NewServer()
 
 		service := filesGRPCHandler.NewFilesGRPCHandler(&dependencies.Container{})
