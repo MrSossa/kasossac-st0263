@@ -3,7 +3,6 @@ package pc
 import (
 	"github.com/ksossa/Topicos-Telematica/reto2/src/api/infrastructure/dependencies"
 	"io/ioutil"
-	"log"
 )
 
 type PCRepository interface {
@@ -26,7 +25,5 @@ func (repository pcRepository) ReadAllMicro() ([]string, error) {
 	for _, file := range files {
 		fileList = append(fileList, file.Name())
 	}
-	mock := []string{"file1.txt,file2.txt"}
-	log.Println(mock)
-	return mock, nil
+	return fileList, nil
 }

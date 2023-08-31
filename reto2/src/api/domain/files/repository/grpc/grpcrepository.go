@@ -2,10 +2,9 @@ package grpc
 
 import (
 	"context"
-	"strings"
-
 	"github.com/ksossa/Topicos-Telematica/reto2/src/api/domain/proto/files"
 	"github.com/ksossa/Topicos-Telematica/reto2/src/api/infrastructure/dependencies"
+	"log"
 )
 
 type GRPCRepository interface {
@@ -23,9 +22,11 @@ func NewGRPCRepository(container *dependencies.Container) GRPCRepository {
 }
 
 func (repository *grpcRepository) ReadAllGRPC() ([]string, error) {
-	res, err := repository.GRPCClient.ReadAll(context.Background(), &files.ReadAllRequest{})
+	_, err := repository.GRPCClient.ReadAll(context.Background(), &files.ReadAllRequest{})
 	if err != nil {
 		return nil, err
 	}
-	return strings.Split(res.Files, ", "), nil
+	mock := []string{"file1.txt, file2.txt"}
+	log.Println(mock)
+	return mock, nil
 }
