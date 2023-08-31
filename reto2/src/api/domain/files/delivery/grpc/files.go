@@ -31,5 +31,6 @@ func (handler FilesGRPCHandler) ReadAll(context.Context, *files.ReadAllRequest) 
 	mock := []string{"file1.txt, file2.txt"}
 	ans := strings.Join(mock, ", ")
 	log.Println(ans)
+	log.Println(mock)
 	return &files.ReadAllResponse{Files: ans}, nil
 }
