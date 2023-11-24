@@ -1,4 +1,4 @@
-# LAB 3-1: File Management in HDFS and S3
+# LAB 3-1: Gestión de archivos en HDFS y S3
 
 ## Detalles del curso
 
