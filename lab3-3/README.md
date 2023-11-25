@@ -53,3 +53,47 @@ Pasos a seguir para un correcto catálogo de los datos.
 4. Ejecute las consultas de muestra
 
    ![imagen](https://github.com/MrSossa/kasossac-st0263/assets/83780739/185789cc-7b2d-46ce-9da4-91edb2cc949f)
+
+## Paso 3: Crear un rol IAM para Amazon Redshift y ejecutar consultas para crear una base de datos externa en el bucket s3 de AWS
+
+1. En el servicio `IAM Redshift` elija Roles y haga clic en `Crear rol`.
+2. Elija `Redshift - Customizable` y haga clic en Siguiente.
+3. Aparecerá la página Adjuntar política de permisos, añade `AmazonS3ReadOnlyAccess`, `AWSGlueConsoleFullAccess` y `AmazonAthenaFullAcces` y haz clic en `next`.
+   
+   ![imagen](https://github.com/MrSossa/kasossac-st0263/assets/83780739/f6006cc6-6fdf-4fdf-83bc-14782d4e6e89)
+
+4. En Nombre de rol, introduzca `myspectrum_role`, y dar en `Create role`.
+5. Crear la base de datos externa
+
+![imagen](https://github.com/MrSossa/kasossac-st0263/assets/83780739/55f7644e-f688-46d7-b1f4-b80702ab014d)
+
+6. Crear una tabla con datos externos en S3
+
+   ![imagen](https://github.com/MrSossa/kasossac-st0263/assets/83780739/c058ca27-873c-4290-b59e-a9f65c8c233d)
+
+7. Consultar datos
+
+   ![imagen](https://github.com/MrSossa/kasossac-st0263/assets/83780739/6d564bb1-2477-43eb-9f82-19fc4a76a634)
+
+## Paso 4: Creación de un cluster ERM y almacenamiento de datos con hive 
+
+1. Crear un cluster ERM
+2. Conéctate al nodo primario con ssh
+3. Vamos a utilizar beeline que se utiliza para conectarse a Hive que se ejecuta en el clúster EMR y ejecutar HiveQL querie. Aquí está cómo se puede [conectar](https://sparkbyexamples.com/apache-hive/connect-to-hive-using-beeline/) a la misma
+4. puedes ver todas las tablas que has creado
+
+   ![imagen](https://github.com/MrSossa/kasossac-st0263/assets/83780739/1ed2c192-c28f-479e-847d-04ca7f08995e)
+
+5. Crear tabla HDI en EMR/S3/Hue/Hive
+
+    #tabla externa en S3:
+    
+    `CREATE EXTERNAL TABLE <nombre_de_tu_tabla> (ejemplo tus_datos:id INT) 
+    FORMATO DE FILA CAMPOS DELIMITADOS TERMINADOS POR ',' 
+    ALMACENADO COMO ARCHIVO DE TEXTO 
+    LOCATION 's3://tu_s3bucket/'`
+
+![imagen](https://github.com/MrSossa/kasossac-st0263/assets/83780739/550f0fe7-c940-40d9-9016-c6cce4de49d8)
+
+6. Ahora puede consultar sus datos
+   ![imagen](https://github.com/MrSossa/kasossac-st0263/assets/83780739/67bda9aa-ca17-44de-b4ac-483f1d4083c7)
