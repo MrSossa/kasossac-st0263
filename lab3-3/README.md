@@ -93,7 +93,8 @@ Pasos a seguir para un correcto catálogo de los datos.
     ALMACENADO COMO ARCHIVO DE TEXTO 
     LOCATION 's3://tu_s3bucket/'`
 
-![imagen](https://github.com/MrSossa/kasossac-st0263/assets/83780739/550f0fe7-c940-40d9-9016-c6cce4de49d8)
+   ![imagen](https://github.com/MrSossa/kasossac-st0263/assets/83780739/550f0fe7-c940-40d9-9016-c6cce4de49d8)
 
 6. Ahora puede consultar sus datos
+
    ![imagen](https://github.com/MrSossa/kasossac-st0263/assets/83780739/67bda9aa-ca17-44de-b4ac-483f1d4083c7)
